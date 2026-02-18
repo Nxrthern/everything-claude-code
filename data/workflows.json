@@ -1,0 +1,274 @@
+{
+  "generatedAt": "2026-02-18T00:00:00.000Z",
+  "version": 1,
+  "workflows": [
+    {
+      "id": "ship-saas-mvp",
+      "name": "Ship a SaaS MVP",
+      "description": "End-to-end workflow to scope, build, test, and ship a SaaS MVP quickly.",
+      "category": "web",
+      "relatedBundles": ["startup-founder", "core-dev"],
+      "steps": [
+        {
+          "title": "Plan the scope",
+          "goal": "Convert the idea into a clear implementation plan and milestones.",
+          "recommendedSkills": [
+            "collaboration/brainstorming",
+            "business/product-manager-toolkit",
+            "_core/coding-standards"
+          ],
+          "notes": "Define problem, user persona, MVP boundaries, and acceptance criteria before coding."
+        },
+        {
+          "title": "Build backend and API",
+          "goal": "Implement the core data model, API contracts, and auth baseline.",
+          "recommendedSkills": [
+            "frameworks/backend-patterns",
+            "databases/postgres-patterns",
+            "security/secrets-management"
+          ],
+          "notes": "Prefer small vertical slices; keep API contracts explicit and testable."
+        },
+        {
+          "title": "Build frontend",
+          "goal": "Deliver the primary user flows with production-grade UX patterns.",
+          "recommendedSkills": [
+            "frameworks/react-patterns",
+            "frameworks/nextjs-best-practices"
+          ],
+          "notes": "Prioritize onboarding, empty states, and one complete happy-path flow."
+        },
+        {
+          "title": "Test and validate",
+          "goal": "Catch regressions and ensure key flows work before release.",
+          "recommendedSkills": [
+            "_core/tdd-workflow",
+            "testing/e2e-testing",
+            "testing/webapp-testing"
+          ],
+          "notes": "Use automated testing for critical paths. Manual testing for UX."
+        },
+        {
+          "title": "Ship safely",
+          "goal": "Release with basic observability and rollback readiness.",
+          "recommendedSkills": [
+            "infrastructure/deployment-strategies",
+            "infrastructure/observability",
+            "_core/verification-loop"
+          ],
+          "notes": "Define release checklist, minimum telemetry, and rollback triggers."
+        }
+      ]
+    },
+    {
+      "id": "security-audit-web-app",
+      "name": "Security Audit for a Web App",
+      "description": "Structured workflow for baseline AppSec review and risk triage.",
+      "category": "security",
+      "relatedBundles": ["security-specialist"],
+      "steps": [
+        {
+          "title": "Define scope and threat model",
+          "goal": "Identify what you're protecting and what threats matter most.",
+          "recommendedSkills": [
+            "security/threat-modeling-expert"
+          ],
+          "notes": "Use STRIDE or ATTACK framework. Focus on critical assets."
+        },
+        {
+          "title": "Authenticate and authorize",
+          "goal": "Verify authentication is strong and authorization is enforced.",
+          "recommendedSkills": [
+            "specialized/auth-implementation-patterns"
+          ],
+          "notes": "Check for broken authn (weak passwords, session fixation), broken authz (privilege escalation)."
+        },
+        {
+          "title": "Input validation and injection prevention",
+          "goal": "Ensure all inputs are validated and no injections are possible.",
+          "recommendedSkills": [
+            "security/pentest-checklist",
+            "specialized/sql-injection-testing"
+          ],
+          "notes": "Check SQL, XSS, LDAP, OS command injection."
+        },
+        {
+          "title": "Secrets and data protection",
+          "goal": "Verify secrets are never exposed and sensitive data is encrypted.",
+          "recommendedSkills": [
+            "security/secrets-management",
+            "security/encryption-strategies"
+          ],
+          "notes": "Check for hardcoded credentials, unencrypted storage, data in logs."
+        },
+        {
+          "title": "Report and prioritize",
+          "goal": "Document findings and create remediation roadmap.",
+          "recommendedSkills": [
+            "security/threat-modeling-expert"
+          ],
+          "notes": "Prioritize by CVSS severity. Start with critical and high."
+        }
+      ]
+    },
+    {
+      "id": "data-pipeline-build",
+      "name": "Build and Optimize Data ETL Pipelines",
+      "description": "Design, implement, and optimize data pipelines for analytics and ML.",
+      "category": "data",
+      "relatedBundles": ["data-engineer"],
+      "steps": [
+        {
+          "title": "Define data requirements",
+          "goal": "Understand sources, transformation needs, and destination requirements.",
+          "recommendedSkills": [
+            "databases/data-management"
+          ],
+          "notes": "Map data sources, identify business logic, define SLAs."
+        },
+        {
+          "title": "Design pipeline architecture",
+          "goal": "Choose orchestration tool and design workflow topology.",
+          "recommendedSkills": [
+            "workflow-automation/airflow-dag-patterns",
+            "architecture/event-driven-architecture"
+          ],
+          "notes": "Consider Airflow, Temporal, or cloud-native options. Plan error handling."
+        },
+        {
+          "title": "Implement transformations",
+          "goal": "Build ETL logic with data quality checks.",
+          "recommendedSkills": [
+            "languages/python-patterns",
+            "databases/query-optimization"
+          ],
+          "notes": "Write testable, maintainable code. Include data validation."
+        },
+        {
+          "title": "Optimize performance",
+          "goal": "Monitor runtime and reduce latency and cost.",
+          "recommendedSkills": [
+            "databases/clickhouse-io",
+            "architecture/advanced-performance"
+          ],
+          "notes": "Profile bottlenecks. Use caching and parallelization where appropriate."
+        },
+        {
+          "title": "Deploy and monitor",
+          "goal": "Release to production with comprehensive monitoring.",
+          "recommendedSkills": [
+            "infrastructure/observability",
+            "infrastructure/deployment-strategies"
+          ],
+          "notes": "Set up alerts for failures. Track SLAs and performance."
+        }
+      ]
+    },
+    {
+      "id": "ml-model-training",
+      "name": "Train and Deploy ML Models",
+      "description": "End-to-end ML workflow from data preparation to production deployment.",
+      "category": "ai-ml",
+      "relatedBundles": ["data-engineer"],
+      "steps": [
+        {
+          "title": "Define problem and metrics",
+          "goal": "Understand what to predict and how to measure success.",
+          "recommendedSkills": [
+            "business/startup-metrics-framework"
+          ],
+          "notes": "Define success metrics clearly (accuracy, precision, recall, F1)."
+        },
+        {
+          "title": "Prepare and explore data",
+          "goal": "Clean, transform, and understand your dataset.",
+          "recommendedSkills": [
+            "databases/data-management",
+            "databases/query-optimization"
+          ],
+          "notes": "Handle missing values, outliers, class imbalance."
+        },
+        {
+          "title": "Engineer features and train model",
+          "goal": "Build features and train baseline and advanced models.",
+          "recommendedSkills": [
+            "languages/python-patterns",
+            "ai-ml/rag-engineer"
+          ],
+          "notes": "Start simple (baseline), then iterate. Use cross-validation."
+        },
+        {
+          "title": "Evaluate and optimize",
+          "goal": "Test model performance and hyperparameter tuning.",
+          "recommendedSkills": [
+            "_core/tdd-workflow",
+            "testing/advanced-testing"
+          ],
+          "notes": "Use train/validation/test split. Avoid overfitting."
+        },
+        {
+          "title": "Deploy and monitor",
+          "goal": "Release model to production with drift detection.",
+          "recommendedSkills": [
+            "infrastructure/deployment-strategies",
+            "infrastructure/observability"
+          ],
+          "notes": "Monitor for data drift and prediction drift. Set up retraining triggers."
+        }
+      ]
+    },
+    {
+      "id": "cloud-migration",
+      "name": "Migrate to Cloud Infrastructure",
+      "description": "Plan and execute migration of on-premise systems to cloud.",
+      "category": "infrastructure",
+      "relatedBundles": ["cloud-ops"],
+      "steps": [
+        {
+          "title": "Assess current state",
+          "goal": "Inventory systems and understand dependencies.",
+          "recommendedSkills": [
+            "specialized/kubernetes-architect"
+          ],
+          "notes": "Document current architecture, performance baselines, and dependencies."
+        },
+        {
+          "title": "Design cloud architecture",
+          "goal": "Plan cloud infrastructure using IaC.",
+          "recommendedSkills": [
+            "specialized/terraform-specialist",
+            "infrastructure/platform-engineering"
+          ],
+          "notes": "Choose cloud provider, services, and deployment model."
+        },
+        {
+          "title": "Build infrastructure",
+          "goal": "Provision cloud infrastructure using Terraform.",
+          "recommendedSkills": [
+            "specialized/terraform-specialist",
+            "infrastructure/docker-patterns"
+          ],
+          "notes": "Use IaC for repeatability. Test in staging first."
+        },
+        {
+          "title": "Migrate data and applications",
+          "goal": "Move systems to cloud with minimal downtime.",
+          "recommendedSkills": [
+            "infrastructure/deployment-strategies",
+            "databases/postgres-patterns"
+          ],
+          "notes": "Plan for data consistency. Consider blue-green deployment."
+        },
+        {
+          "title": "Optimize and hand off",
+          "goal": "Right-size resources and establish operational processes.",
+          "recommendedSkills": [
+            "infrastructure/observability",
+            "infrastructure/incident-analysis"
+          ],
+          "notes": "Monitor costs. Set up runbooks and alerting. Train ops team."
+        }
+      ]
+    }
+  ]
+}

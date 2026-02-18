@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-02-18T00:00:00.000Z",
+  "version": 2,
+  "bundles": {
+    "principal-engineer": {
+      "description": "The ultimate principal engineer bundle - core foundations, deep architecture, infrastructure mastery, security excellence, and observability.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/tdd-workflow",
+        "_core/security-review",
+        "_core/verification-loop",
+        "_core/eval-harness",
+        "_core/continuous-learning-v2",
+        "_core/staff-principles",
+        "architecture/distributed-systems",
+        "architecture/event-driven-architecture",
+        "architecture/sharding-partitioning",
+        "architecture/multi-cloud-region",
+        "architecture/advanced-concurrency",
+        "architecture/advanced-performance",
+        "infrastructure/platform-engineering",
+        "infrastructure/deployment-strategies",
+        "infrastructure/observability",
+        "infrastructure/incident-analysis",
+        "security/encryption-strategies",
+        "security/secrets-management",
+        "security/network-security-mesh",
+        "security/rotation-strategies",
+        "databases/postgres-patterns",
+        "databases/clickhouse-io",
+        "databases/query-optimization",
+        "languages/golang-patterns",
+        "languages/python-patterns",
+        "languages/rust-pro",
+        "frameworks/backend-patterns",
+        "frameworks/springboot-patterns",
+        "frameworks/django-patterns"
+      ]
+    },
+    "startup-founder": {
+      "description": "Everything needed to launch a SaaS startup - business strategy, core development, AI/ML, full-stack frameworks, and deployment.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/tdd-workflow",
+        "_core/security-review",
+        "business/pricing-strategy",
+        "business/product-manager-toolkit",
+        "business/startup-metrics-framework",
+        "business/seo-audit",
+        "business/copywriting",
+        "ai-ml/rag-engineer",
+        "ai-ml/prompt-engineer",
+        "ai-ml/ai-agents-architect",
+        "collaboration/brainstorming",
+        "collaboration/writing-skills",
+        "frameworks/react-patterns",
+        "frameworks/nextjs-best-practices",
+        "frameworks/backend-patterns",
+        "frameworks/django-patterns",
+        "infrastructure/deployment-strategies",
+        "infrastructure/docker-patterns",
+        "databases/postgres-patterns",
+        "cloud-providers/aws/aws-serverless",
+        "testing/e2e-testing"
+      ]
+    },
+    "security-specialist": {
+      "description": "Comprehensive security skills - authentication, penetration testing, threat modeling, compliance, and secure development.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/security-review",
+        "_core/verification-loop",
+        "security/encryption-strategies",
+        "security/secrets-management",
+        "security/network-security-mesh",
+        "security/pentest-checklist",
+        "security/ethical-hacking-methodology",
+        "security/vulnerability-scanner",
+        "security/threat-modeling-expert",
+        "specialized/auth-implementation-patterns",
+        "specialized/pci-compliance",
+        "specialized/gdpr-data-handling",
+        "infrastructure/network-security-mesh",
+        "databases/postgres-patterns",
+        "languages/golang-patterns",
+        "languages/python-patterns"
+      ]
+    },
+    "data-engineer": {
+      "description": "Data engineering mastery - databases, analytics, pipelines, cloud data services, and ML engineering.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/tdd-workflow",
+        "databases/postgres-patterns",
+        "databases/clickhouse-io",
+        "databases/query-optimization",
+        "databases/data-management",
+        "databases/database-migrations",
+        "ai-ml/rag-engineer",
+        "ai-ml/vector-database-engineer",
+        "workflow-automation/airflow-dag-patterns",
+        "workflow-automation/temporal-python-pro",
+        "cloud-providers/azure/azure-data-tables-py",
+        "cloud-providers/azure/azure-eventhub-py",
+        "cloud-providers/aws/aws-serverless",
+        "languages/python-patterns",
+        "languages/python-testing",
+        "languages/golang-patterns",
+        "testing/advanced-testing"
+      ]
+    },
+    "frontend-lead": {
+      "description": "Frontend expertise - React/Next.js patterns, testing, performance, accessibility, and mobile frameworks.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/tdd-workflow",
+        "frameworks/react-patterns",
+        "frameworks/nextjs-best-practices",
+        "frameworks/flutter-expert",
+        "testing/e2e-testing",
+        "testing/webapp-testing",
+        "architecture/advanced-performance",
+        "languages/typescript-expert",
+        "languages/python-patterns",
+        "specialized/accessibility-compliance",
+        "specialized/web-design-guidelines",
+        "infrastructure/deployment-strategies"
+      ]
+    },
+    "core-dev": {
+      "description": "Core development skills - languages, coding standards, testing, and patterns.",
+      "skills": [
+        "_core/coding-standards",
+        "_core/tdd-workflow",
+        "_core/security-review",
+        "languages/golang-patterns",
+        "languages/python-patterns",
+        "languages/rust-pro",
+        "languages/typescript-expert",
+        "languages/java-pro",
+        "testing/golang-testing",
+        "testing/python-testing",
+        "frameworks/backend-patterns",
+        "frameworks/frontend-patterns"
+      ]
+    },
+    "cloud-ops": {
+      "description": "Cloud operations and infrastructure - Kubernetes, Terraform, deployment, observability.",
+      "skills": [
+        "infrastructure/platform-engineering",
+        "infrastructure/deployment-strategies",
+        "infrastructure/observability",
+        "specialized/kubernetes-architect",
+        "specialized/terraform-specialist",
+        "docker-patterns",
+        "security/network-security-mesh",
+        "cloud-providers/aws/aws-serverless",
+        "cloud-providers/azure/azure-functions"
+      ]
+    },
+    "devops-pro": {
+      "description": "DevOps mastery - CI/CD, IaC, containers, orchestration, and monitoring.",
+      "skills": [
+        "infrastructure/deployment-patterns",
+        "infrastructure/deployment-strategies",
+        "infrastructure/docker-patterns",
+        "infrastructure/platform-engineering",
+        "infrastructure/observability",
+        "infrastructure/incident-analysis",
+        "specialized/kubernetes-architect",
+        "specialized/terraform-specialist",
+        "specialized/gitops-workflow"
+      ]
+    }
+  },
+  "common": [
+    "_core/coding-standards",
+    "_core/tdd-workflow",
+    "_core/security-review",
+    "languages/golang-patterns",
+    "languages/python-patterns",
+    "languages/typescript-expert",
+    "frameworks/backend-patterns",
+    "frameworks/react-patterns",
+    "databases/postgres-patterns",
+    "infrastructure/platform-engineering",
+    "security/secrets-management"
+  ]
+}
